@@ -13,7 +13,6 @@ import org.json.JSONObject
 import java.net.URI
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var socket: MyWebSocketClient
 
     private lateinit var webSocketManager: WebSocketManager
     private lateinit var editText: EditText
@@ -26,9 +25,8 @@ class MainActivity : AppCompatActivity() {
         editText = findViewById(R.id.editText)
 
         // 初始化WebSocket连接
-        val serverUrl = "ws://10.0.2.2:8000"  // 模拟器访问本地用10.0.2.2
         val androidId = "android123"  // 每个客户端唯一ID
-        webSocketManager = WebSocketManager(serverUrl, androidId) {
+        webSocketManager = WebSocketManager(Common.SERVER_URL, androidId) {
             editText.text.toString()
         }
         webSocketManager.connect()
