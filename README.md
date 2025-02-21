@@ -14,6 +14,24 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 python3 main.py
 ```
+查询连接用户数据：
+请求地址
+```
+curl http://localhost:8000/connected_clients
+```
+返回示例
+```
+{
+  "connected_clients": [
+    "android123"
+  ]
+}
+```
+查询指定用户当前数据
+请求参数：
+```
+用户Id例：android123
+```
 请求地址：
 ```
 curl http://localhost:8000/get_input/android123
