@@ -1,6 +1,7 @@
 # Android-Python
 
-![描述文字](https://github.com/用户名/仓库名/raw/分支名/路径/文件名.gif)
+![Android与Python交互演示](https://github.com/DIABLOSER/Android-Python/raw/main/raw/raw.gif)
+
 # 实现原理及流程
 1. 安卓端通过WebSocket连接到服务端，并在连接建立时发送自己的ID，服务端将ID和对应的WebSocket连接保存起来，比如在一个字典里。
 
