@@ -5,5 +5,6 @@ package com.daboluo.myapplication
  *Email:daboluo719@gmail.com
  */
 object Common {
-    const val SERVER_URL = "ws://10.0.2.2:8000"
+
+    const val SERVER_URL = "ws://47.122.128.122:8000"
 }
